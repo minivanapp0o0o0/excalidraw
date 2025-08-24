@@ -5,7 +5,7 @@ import "./WelcomeScreen.scss";
 
 const WelcomeScreen = (props: { children?: React.ReactNode }) => {
   return (
-    <>
+    <div className="welcome-screen-middle">
       {props.children || (
         <>
           <Center />
@@ -14,7 +14,7 @@ const WelcomeScreen = (props: { children?: React.ReactNode }) => {
           <HelpHint />
         </>
       )}
-    </>
+    </div>
   );
 };
 
