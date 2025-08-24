@@ -339,6 +339,25 @@ export const Export = () => {
 };
 Export.displayName = "Export";
 
+export const GetUpAndGetPaid = () => {
+  const { t } = useI18n();
+  const setAppState = useExcalidrawSetAppState();
+  
+  return (
+    <DropdownMenuItem
+      icon={boltIcon}
+      onSelect={() => {
+        setAppState({ openDialog: { name: "getUpAndGetPaid" } });
+      }}
+      data-testid="get-up-get-paid-button"
+      aria-label={t("buttons.getUpAndGetPaid")}
+    >
+      {t("buttons.getUpAndGetPaid")}
+    </DropdownMenuItem>
+  );
+};
+GetUpAndGetPaid.displayName = "GetUpAndGetPaid";
+
 export const Socials = () => {
   const { t } = useI18n();
 
